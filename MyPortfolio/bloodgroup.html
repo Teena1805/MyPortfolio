@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Group Detection Using Fingerprint</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="project-page">
+    <h1>Blood Group Detection Using Fingerprint</h1>
+    <img src="project_images/bloodgroup.png" alt="Blood Group Detection Project">
+    
+    <p>
+    This project presents a novel approach to predicting a person’s blood group using fingerprint images and deep learning. By leveraging biometric data, the system eliminates the need for invasive blood tests. It uses a pre-trained VGG16 Convolutional Neural Network (CNN) model combined with advanced fingerprint preprocessing techniques such as CLAHE, noise reduction, and thresholding. The model is trained on a labeled dataset of fingerprint images categorized by blood group. A Flask-based web interface allows users to upload fingerprint images and receive real-time predictions with confidence scores, offering a fast, non-invasive, and intelligent health solution.
+</p>
+
+    <p><strong>Main Highlights:</strong></p>
+<ul>
+    <li>Detects blood group from fingerprint using deep learning.</li>
+    <li>Uses VGG16 CNN model with transfer learning.</li>
+    <li>Fingerprint preprocessing: CLAHE, noise removal, thresholding.</li>
+    <li>Dataset organized by blood group for training and testing.</li>
+    <li>Accuracy: ~86% training, ~82% validation.</li>
+    <li>Flask-based web app with user-friendly image upload.</li>
+    <li>Outputs predicted blood group with confidence score.</li>
+    <li>Includes SQLite database for saving user image info.</li>
+</ul>
+
+
+    <div class="github-link">
+    <a href="https://github.com/Teena1805/Bloodgroup_Detection_Using_Fingerprint.git" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+    </a>
+</div>
+<div style="text-align: center; margin-bottom: 20px;">
+    <button onclick="goBack()" style="background-color: #d04822; color: white; padding: 8px 16px; border: none; border-radius: 8px; cursor: pointer;">
+        ← Back
+    </button>
+</div>
+
+<script src="js/script.js"></script>
+
+</div>
+
+</body>
+</html>
