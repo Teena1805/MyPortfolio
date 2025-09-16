@@ -157,42 +157,43 @@ section {
 /* certificates, skills, projects, contact, achievements remain same... */
 
 /* ---- RESPONSIVENESS ---- */
-@media (max-width: 1024px) {
-    .moving-text { font-size: 2.5rem; }
-    .nav-buttons { width: 70%; height: auto; }
-    .nav-buttons .button { min-width: 220px; font-size: 18px; }
-}
-
 @media (max-width: 768px) {
-    header { height: auto; padding: 40px 20px; }
-    .moving-text { font-size: 2rem; margin-top: 20px; }
+    header {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .moving-text {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
     .nav-buttons {
-        grid-template-columns: 1fr; /* stack buttons in one column */
+        display: flex;          /* switch from grid to flex */
+        flex-direction: column; /* stack buttons vertically */
+        align-items: center;    /* center them */
         width: 100%;
         gap: 15px;
     }
+
     .nav-buttons .button {
-        min-width: unset;
-        width: 90%;
+        width: 90%;    /* take most of screen width */
         height: 60px;
         font-size: 18px;
     }
-    .name { font-size: 28px; }
-    img { width: 100%; height: auto; }
-}
 
-@media (max-width: 480px) {
-    body { font-size: 14px; }
-    .moving-text { font-size: 1.6rem; }
-    .nav-buttons .button { font-size: 16px; height: 50px; }
-    .name { font-size: 22px; }
-    section { margin: 10px 0; padding: 15px; }
-    .certificate-card, .skill-card, .project-card {
-        width: 100%; max-width: 100%;
+    .name {
+        font-size: 28px;
     }
-    .contact-info, .contact-form {
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+     .contact-info, .contact-form {
         padding: 15px;
         min-width: unset;
     }
     footer { font-size: 12px; padding: 15px; }
+
 }
